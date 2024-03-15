@@ -64,7 +64,8 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '17'
-        distribution: 'temurin'    - shell: bash 
+        distribution: 'temurin'    
+    - shell: bash 
       run: |  
         java -jar greetings-actions.jar ${{ github.event.inputs.myValues }}  
   
